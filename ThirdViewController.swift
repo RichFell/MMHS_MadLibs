@@ -13,8 +13,8 @@ class ThirdViewController: UIViewController {
     var nameString = String()
     var verbString = String()
 
-    @IBOutlet var label: UILabel
-    @IBOutlet var textField: UITextField
+    @IBOutlet var label: UILabel!
+    @IBOutlet var textField: UITextField!
 
 
     override func viewDidLoad() {

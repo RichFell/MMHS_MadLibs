@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T2b-Uv-AVF">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.11" systemVersion="13E28" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="T2b-Uv-AVF">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6190.4"/>
     </dependencies>
     <scenes>
         <!--Begin-->
@@ -13,11 +13,11 @@
                         <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YNt-7s-c5c">
-                                <rect key="frame" x="141" y="206" width="199" height="30"/>
+                                <rect key="frame" x="201" y="206" width="199" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="199" id="M1D-7J-XQ9"/>
                                     <constraint firstAttribute="height" constant="30" id="sBd-oT-6dm"/>
@@ -26,7 +26,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enter your friend's name below" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Ut-X0-d7p">
-                                <rect key="frame" x="121" y="131" width="239" height="21"/>
+                                <rect key="frame" x="181" y="131" width="239" height="21"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="21" id="Bn5-hn-lvK"/>
                                     <constraint firstAttribute="width" constant="239" id="x4e-Gc-1du"/>
@@ -36,7 +36,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vtc-cz-vZi">
-                                <rect key="frame" x="348" y="206" width="30" height="30"/>
+                                <rect key="frame" x="408" y="206" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="oJS-gJ-Q7W"/>
                                     <constraint firstAttribute="width" constant="30" id="pS1-4L-rNK"/>
@@ -77,17 +77,17 @@
                         <viewControllerLayoutGuide type="bottom" id="Gay-sv-SFx"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="cUP-zu-FZ0">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OtR-W6-x7x">
-                                <rect key="frame" x="219" y="121" width="42" height="64"/>
+                                <rect key="frame" x="279" y="121" width="42" height="64"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fUk-CC-aEY">
-                                <rect key="frame" x="163" y="225" width="154" height="30"/>
+                                <rect key="frame" x="223" y="225" width="154" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="QoT-gz-2HC"/>
                                     <constraint firstAttribute="width" constant="154" id="bvz-81-DjD"/>
@@ -96,7 +96,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o0v-IY-dQ1">
-                                <rect key="frame" x="325" y="225" width="30" height="30"/>
+                                <rect key="frame" x="385" y="225" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="87C-yf-tpX"/>
                                     <constraint firstAttribute="height" constant="30" id="BeV-1B-G2G"/>
@@ -136,17 +136,17 @@
                         <viewControllerLayoutGuide type="bottom" id="Xe1-0f-fVb"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="r0e-Ts-YG6">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LfP-Rv-Bgp">
-                                <rect key="frame" x="219" y="136" width="42" height="21"/>
+                                <rect key="frame" x="279" y="136" width="42" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y8p-yY-47k">
-                                <rect key="frame" x="316" y="240" width="30" height="30"/>
+                                <rect key="frame" x="376" y="240" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="bBf-gC-a2F"/>
                                     <constraint firstAttribute="height" constant="30" id="jY9-VZ-27y"/>
@@ -159,7 +159,7 @@
                                 </connections>
                             </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7JU-sF-EeK">
-                                <rect key="frame" x="176" y="240" width="129" height="30"/>
+                                <rect key="frame" x="236" y="240" width="129" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="UNH-Cc-uwd"/>
                                     <constraint firstAttribute="width" constant="129" id="VbC-kp-o2h"/>
@@ -196,11 +196,11 @@
                         <viewControllerLayoutGuide type="bottom" id="EeD-hx-UY6"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="4yY-4c-xsC">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HkZ-ms-RZP">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="480"/>
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="480"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>

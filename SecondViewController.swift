@@ -10,8 +10,8 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
-    @IBOutlet var label: UILabel
-    @IBOutlet var textField: UITextField
+    @IBOutlet var label: UILabel!
+    @IBOutlet var textField: UITextField!
     var friendName = String()
 
     override func viewDidLoad() {
