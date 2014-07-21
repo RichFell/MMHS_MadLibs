@@ -8,13 +8,16 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
                             
-    @IBOutlet var textField: UITextField
+    @IBOutlet var textField: UITextField!
+    @IBOutlet weak var addButton: UIButton!
 
     override func viewDidLoad() {
         super.viewDidLoad()
         textField.placeholder = "Enter name here"
+        textField.delegate = self
+        addButton.enabled = false
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!)
@@ -23,5 +26,14 @@ class ViewController: UIViewController {
         secondVC.friendName = textField.text
     }
 
+   func textFieldShouldReturn(textField: UITextField!) -> Bool
+   {
+    if textField.text != ""
+    {
+         addButton.enabled = true
+    }
+    
+    return true
+    }
 }
 

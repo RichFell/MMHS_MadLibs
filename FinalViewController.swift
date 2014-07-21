@@ -14,7 +14,7 @@ class FinalViewController: UIViewController {
     var verbString = String()
     var nounString = String()
 
-    @IBOutlet var textView: UITextView
+    @IBOutlet var textView: UITextView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -8,20 +8,21 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController, UITextFieldDelegate {
 
     var nameString = String()
     var verbString = String()
 
-    @IBOutlet var label: UILabel
-    @IBOutlet var textField: UITextField
+    @IBOutlet var label: UILabel!
+    @IBOutlet var textField: UITextField!
+    @IBOutlet weak var addButton: UIButton!
 
 
     override func viewDidLoad() {
         super.viewDidLoad()
         label.text = "Add a noun that \(nameString) likes"
         textField.placeholder = "Enter noun here"
-
+        addButton.enabled = true
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!)
@@ -30,6 +31,15 @@ class ThirdViewController: UIViewController {
         finalVC.nameString = nameString
         finalVC.verbString = verbString
         finalVC.nounString = textField.text
+    }
+
+    func textFieldShouldReturn(textField: UITextField!) -> Bool
+    {
+        if textField.text != ""
+        {
+            addButton.enabled = true
+        }
+        return true
     }
 
 

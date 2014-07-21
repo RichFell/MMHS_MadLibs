@@ -8,10 +8,11 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController, UITextFieldDelegate {
 
-    @IBOutlet var label: UILabel
-    @IBOutlet var textField: UITextField
+    @IBOutlet var label: UILabel!
+    @IBOutlet var textField: UITextField!
+    @IBOutlet weak var addButton: UIButton!
     var friendName = String()
 
     override func viewDidLoad() {
@@ -21,6 +22,7 @@ class SecondViewController: UIViewController {
         label.sizeToFit()
 
         textField.placeholder = "Enter verb here"
+        addButton.enabled = false
 
     }
 
@@ -29,8 +31,15 @@ class SecondViewController: UIViewController {
         let thirdVC = segue.destinationViewController as ThirdViewController
         thirdVC.nameString = friendName
         thirdVC.verbString = textField.text
-        
     }
 
+    func textFieldShouldReturn(textField: UITextField!) -> Bool
+    {
+        if textField.text != ""
+        {
+            addButton.enabled = true
+        }
+        return true
+    }
 
 }
