@@ -211,6 +211,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="HkZ-ms-RZP" firstAttribute="top" secondItem="4yY-4c-xsC" secondAttribute="top" id="GBc-gF-2ES"/>
                             <constraint firstItem="HkZ-ms-RZP" firstAttribute="top" secondItem="4yY-4c-xsC" secondAttribute="top" id="MIM-cz-HwC"/>
                             <constraint firstItem="HkZ-ms-RZP" firstAttribute="leading" secondItem="4yY-4c-xsC" secondAttribute="leading" id="N4D-BC-iJl"/>
                             <constraint firstAttribute="centerX" secondItem="HkZ-ms-RZP" secondAttribute="centerX" id="mWR-62-SPT"/>

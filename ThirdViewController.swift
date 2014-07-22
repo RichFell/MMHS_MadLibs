@@ -22,7 +22,10 @@ class ThirdViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         label.text = "Add a noun that \(nameString) likes"
         textField.placeholder = "Enter noun here"
-        addButton.enabled = true
+        addButton.enabled = false
+        textField.delegate = self
+
+        view.backgroundColor = UIColor.greenColor()
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!)

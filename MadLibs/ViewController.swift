@@ -18,6 +18,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.placeholder = "Enter name here"
         textField.delegate = self
         addButton.enabled = false
+
+        view.backgroundColor = UIColor.greenColor()
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!)

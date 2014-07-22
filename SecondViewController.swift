@@ -23,6 +23,9 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
 
         textField.placeholder = "Enter verb here"
         addButton.enabled = false
+        textField.delegate = self
+
+        view.backgroundColor = UIColor.greenColor()
 
     }
 
