@@ -36,7 +36,7 @@ class ThirdViewController: UIViewController, UITextFieldDelegate {
         finalVC.nounString = textField.text
     }
 
-    func textFieldShouldReturn(textField: UITextField!) -> Bool
+    func textField(textField: UITextField!, shouldChangeCharactersInRange range: NSRange, replacementString string: String!) -> Bool
     {
         if textField.text != ""
         {
