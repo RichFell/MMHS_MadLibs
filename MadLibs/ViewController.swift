@@ -26,14 +26,14 @@ class ViewController: UIViewController, UITextFieldDelegate {
         secondVC.friendName = textField.text
     }
 
-   func textFieldShouldReturn(textField: UITextField!) -> Bool
-   {
-    if textField.text != ""
+    func textField(textField: UITextField!, shouldChangeCharactersInRange range: NSRange, replacementString string: String!) -> Bool
     {
-         addButton.enabled = true
-    }
-    
-    return true
+        if textField.text != ""
+        {
+            addButton.enabled = true
+        }
+
+        return true
     }
 }
 
