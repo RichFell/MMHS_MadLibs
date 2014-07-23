@@ -22,10 +22,11 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         label.sizeToFit()
 
         textField.placeholder = "Enter verb here"
+        textField.textColor = UIColor.verbColor()
         addButton.enabled = false
         textField.delegate = self
 
-        view.backgroundColor = UIColor.greenColor()
+        view.backgroundColor = UIColor.viewBackgroundColor()
 
     }
 

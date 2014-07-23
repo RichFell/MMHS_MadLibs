@@ -8,6 +8,24 @@
 
 import UIKit
 
+extension UIColor{
+    class func nameColor() -> UIColor
+    {
+        return UIColor(red: 118.0/255.0, green: 232.0/255.0, blue: 8.0/255.0, alpha: 1.0)
+    }
+    class func verbColor() -> UIColor
+    {
+        return UIColor(red: 232.0/255.0, green: 138.0/255.0, blue: 12.0/255.0, alpha: 1.0)
+    }
+    class func nounColor() -> UIColor
+    {
+        return UIColor(red: 255.0/255.0, green: 0.0/255.0, blue: 0.0/255.0, alpha: 1.0)
+    }
+    class func viewBackgroundColor() ->UIColor
+    {
+        return UIColor(red: 13.0/255.0, green: 153.0/255.0, blue: 255.0/255.0, alpha: 1.0)
+    }
+}
 class ViewController: UIViewController, UITextFieldDelegate {
                             
     @IBOutlet var textField: UITextField!
@@ -19,7 +37,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         textField.delegate = self
         addButton.enabled = false
 
-        view.backgroundColor = UIColor.greenColor()
+        textField.textColor = UIColor.nameColor()
+        view.backgroundColor = UIColor.viewBackgroundColor()
     }
 
     override func prepareForSegue(segue: UIStoryboardSegue!, sender: AnyObject!)

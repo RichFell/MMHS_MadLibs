@@ -21,7 +21,7 @@ class FinalViewController: UIViewController {
 
         textView.editable = false
 
-        textView.backgroundColor = UIColor.greenColor()
+        textView.backgroundColor = UIColor.viewBackgroundColor()
 
         let string = "One fine afternoon \(nameString) decided to go for a \(verbString), while \(nameString) was \(verbString)ing, \(nameString) decided \(nameString) would like a \(nounString). So \(nameString) decided to \(verbString) over to the \(nounString) store. After arriving \(nameString) found that they were out of \(nounString) at the \(nounString) store. \(nameString) was not happy so \(nameString) \(verbString)ed out of there as fast as \(nameString) could \(verbString)."
 
@@ -32,7 +32,7 @@ class FinalViewController: UIViewController {
         for nameMatch in nameMatches
         {
             let wordRange = nameMatch.rangeAtIndex(0)
-            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.redColor(), range: wordRange)
+            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.nameColor(), range: wordRange)
         }
 
         var verbRegex = NSRegularExpression(pattern: verbString, options: nil, error: nil)
@@ -40,7 +40,7 @@ class FinalViewController: UIViewController {
         for verbMatch in verbMatches
         {
             let wordRange = verbMatch.rangeAtIndex(0)
-            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.orangeColor(), range: wordRange)
+            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.verbColor(), range: wordRange)
         }
 
         var nounRegex = NSRegularExpression(pattern: nounString, options: nil, error: nil)
@@ -48,16 +48,13 @@ class FinalViewController: UIViewController {
         for nounMatch in nounMatches
         {
             let wordRange = nounMatch.rangeAtIndex(0)
-            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.magentaColor(), range: wordRange)
+            attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.nounColor(), range: wordRange)
         }
-
-        let font = UIFont(name:"AmericanTypewriter", size: 30)
-        textView.font = font
         
         textView.attributedText = attributedString
 
 
-        view.backgroundColor = UIColor.greenColor()
+        view.backgroundColor = UIColor.viewBackgroundColor()
     }
     
 

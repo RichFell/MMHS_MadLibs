@@ -42,6 +42,7 @@
                                     <constraint firstAttribute="width" constant="30" id="pS1-4L-rNK"/>
                                 </constraints>
                                 <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -103,6 +104,7 @@
                                     <constraint firstAttribute="height" constant="30" id="BeV-1B-G2G"/>
                                 </constraints>
                                 <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
@@ -154,6 +156,7 @@
                                     <constraint firstAttribute="height" constant="30" id="jY9-VZ-27y"/>
                                 </constraints>
                                 <state key="normal" title="Add">
+                                    <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
