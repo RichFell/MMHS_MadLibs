@@ -8,13 +8,15 @@
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SecondViewController: UIViewController
+{
 
     @IBOutlet var label: UILabel!
     @IBOutlet var textField: UITextField!
     var friendName = String()
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         label.text = "Add a verb to tell us what \(friendName) will do"
