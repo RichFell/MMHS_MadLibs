@@ -8,7 +8,8 @@
 
 import UIKit
 
-extension UIColor{
+extension UIColor
+    {
     class func nameColor() -> UIColor
     {
         return UIColor(red: 118.0/255.0, green: 232.0/255.0, blue: 8.0/255.0, alpha: 1.0)
@@ -26,12 +27,14 @@ extension UIColor{
         return UIColor(red: 13.0/255.0, green: 153.0/255.0, blue: 255.0/255.0, alpha: 1.0)
     }
 }
-class ViewController: UIViewController, UITextFieldDelegate {
+class ViewController: UIViewController, UITextFieldDelegate
+{
                             
     @IBOutlet var textField: UITextField!
     @IBOutlet weak var addButton: UIButton!
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         textField.placeholder = "Enter name here"
         textField.delegate = self

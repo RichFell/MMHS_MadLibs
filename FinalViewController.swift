@@ -8,15 +8,17 @@
 
 import UIKit
 
-class FinalViewController: UIViewController {
+class FinalViewController: UIViewController
+{
 
-    var nameString = String()
-    var verbString = String()
-    var nounString = String()
+    var nameString = ""
+    var verbString = ""
+    var nounString = ""
 
     @IBOutlet var textView: UITextView!
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         textView.editable = false
@@ -56,6 +58,4 @@ class FinalViewController: UIViewController {
 
         view.backgroundColor = UIColor.viewBackgroundColor()
     }
-    
-
 }
