@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController, UITextFieldDelegate {
+class ThirdViewController: UIViewController, UITextFieldDelegate
+{
 
     var nameString = String()
     var verbString = String()
@@ -18,7 +19,8 @@ class ThirdViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var addButton: UIButton!
 
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         label.text = "Add a noun that \(nameString) likes"
         textField.placeholder = "Enter noun here"

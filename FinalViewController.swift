@@ -8,7 +8,8 @@
 
 import UIKit
 
-class FinalViewController: UIViewController {
+class FinalViewController: UIViewController
+{
 
     var nameString = String()
     var verbString = String()
@@ -16,7 +17,8 @@ class FinalViewController: UIViewController {
 
     @IBOutlet var textView: UITextView!
 
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
 
         textView.editable = false
