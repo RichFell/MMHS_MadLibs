@@ -11,8 +11,8 @@ import UIKit
 class ThirdViewController: UIViewController, UITextFieldDelegate
 {
 
-    var nameString = ""
-    var verbString = ""
+    var nameString = String()
+    var verbString = String()
 
     @IBOutlet var label: UILabel!
     @IBOutlet var textField: UITextField!

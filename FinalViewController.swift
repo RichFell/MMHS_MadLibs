@@ -11,9 +11,9 @@ import UIKit
 class FinalViewController: UIViewController
 {
 
-    var nameString = ""
-    var verbString = ""
-    var nounString = ""
+    var nameString = String()
+    var verbString = String()
+    var nounString = String()
 
     @IBOutlet var textView: UITextView!
 
