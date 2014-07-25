@@ -14,7 +14,7 @@ class SecondViewController: UIViewController, UITextFieldDelegate
     @IBOutlet var label: UILabel!
     @IBOutlet var textField: UITextField!
     @IBOutlet weak var addButton: UIButton!
-    var friendName = String()
+    var friendName : String = ""
 
     override func viewDidLoad()
     {
