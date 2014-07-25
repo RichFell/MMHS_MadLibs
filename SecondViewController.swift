@@ -13,7 +13,7 @@ class SecondViewController: UIViewController
 
     @IBOutlet var label: UILabel!
     @IBOutlet var textField: UITextField!
-    var friendName = String()
+    var friendName : String = ""
 
     override func viewDidLoad()
     {
