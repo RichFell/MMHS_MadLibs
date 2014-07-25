@@ -23,7 +23,7 @@ class FinalViewController: UIViewController
 
         textView.editable = false
 
-        textView.backgroundColor = UIColor.viewBackgroundColor()
+        textView.backgroundColor = UIColor.clearColor()
 
         let string = "One fine afternoon \(nameString) decided to go for a \(verbString), while \(nameString) was \(verbString)ing, \(nameString) decided \(nameString) would like a \(nounString). So \(nameString) decided to \(verbString) over to the \(nounString) store. After arriving \(nameString) found that they were out of \(nounString) at the \(nounString) store. \(nameString) was not happy so \(nameString) \(verbString)ed out of there as fast as \(nameString) could \(verbString)."
 
@@ -52,7 +52,11 @@ class FinalViewController: UIViewController
             let wordRange = nounMatch.rangeAtIndex(0)
             attributedString.addAttribute(NSForegroundColorAttributeName, value: UIColor.nounColor(), range: wordRange)
         }
-        
+
+        let stringLength = attributedString.length
+        let font = UIFont(name: "Helvetica-Bold", size: 15.0)
+        attributedString.addAttribute(NSFontAttributeName, value: font, range: NSMakeRange(0, stringLength))
+
         textView.attributedText = attributedString
 
 
